@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Weather Report</h1>
+        <div class="search-container">
+            <input type="text" id="input" placeholder="Enter city name">
+            <button id="search" onclick="searchByCity()">Search</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="weather">
+            <h2 id="city">Delhi, IN</h2>
+            <div class="temp-box">
+                <img src="/weathericon.png" alt="Weather Icon" id="img" height="1px">
+                <p id="temperature">26 °C</p>
+            </div>
+            <span id="clouds">Broken Clouds</span>
+        </div>
+        <div class="divider1"></div>
+
+        <div class="forecastH">
+            <p class="cast-header">Upcoming forecast</p>
+            <div class="templist">
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+                <!-- Add more forecast items as needed -->
+            </div>
+        </div>
+    </main>
+
+    <div class="forecastD">
+        <div class="divider2"></div>
+        <p class="cast-header">Next 4 days forecast</p>
+        <div class="weekF">
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+            <!-- Add more forecast items as needed -->
+        </div>
+    </div>
+
+    <div id="side-panel">
+        <div id="crop-suggestions">
+            <h3>Crop Suggestions</h3>
+            <div id="crop-info"></div>
+        </div>
+        <div id="fun-facts">
+            <h3>Fun Facts</h3>
+            <div id="fun-facts-info"></div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
